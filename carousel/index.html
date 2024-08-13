@@ -97,11 +97,11 @@ body {
   color: #362a2b;
 }
 
-@media (min-width: 800px) and (min-height: 800px) {
+@media (min-width: 400px) and (min-height: 400px) {
   .slide .content {
     bottom: 70px;
-    left: -800px;
-    width: 800px;
+    left: -400px;
+    width: 400px;
     padding: 2rem;
     line-height: 1.6;
   }
@@ -111,7 +111,7 @@ body {
   }
 
   .slide.current .content {
-    transform: translateX(800px);
+    transform: translateX(400px);
   }
 }
 </style>
@@ -137,7 +137,7 @@ body {
     const slides = document.querySelectorAll(".slide");
     const nextButton = document.getElementById("next");
     const prevButton = document.getElementById("prev");
-    const auto = true;
+    const auto = false;
     const intervalTime = 5000;
     let slideInterval;
 
